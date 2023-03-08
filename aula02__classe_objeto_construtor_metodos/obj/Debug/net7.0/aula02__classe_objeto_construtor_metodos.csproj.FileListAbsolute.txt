@@ -1,0 +1,15 @@
+C:\Users\rzirb\Documents\faculdade\POO\POO-23-1\aula02__classe_objeto_construtor_metodos\bin\Debug\net7.0\aula02__classe_objeto_construtor_metodos.exe
+C:\Users\rzirb\Documents\faculdade\POO\POO-23-1\aula02__classe_objeto_construtor_metodos\bin\Debug\net7.0\aula02__classe_objeto_construtor_metodos.deps.json
+C:\Users\rzirb\Documents\faculdade\POO\POO-23-1\aula02__classe_objeto_construtor_metodos\bin\Debug\net7.0\aula02__classe_objeto_construtor_metodos.runtimeconfig.json
+C:\Users\rzirb\Documents\faculdade\POO\POO-23-1\aula02__classe_objeto_construtor_metodos\bin\Debug\net7.0\aula02__classe_objeto_construtor_metodos.dll
+C:\Users\rzirb\Documents\faculdade\POO\POO-23-1\aula02__classe_objeto_construtor_metodos\bin\Debug\net7.0\aula02__classe_objeto_construtor_metodos.pdb
+C:\Users\rzirb\Documents\faculdade\POO\POO-23-1\aula02__classe_objeto_construtor_metodos\obj\Debug\net7.0\aula02__classe_objeto_construtor_metodos.csproj.AssemblyReference.cache
+C:\Users\rzirb\Documents\faculdade\POO\POO-23-1\aula02__classe_objeto_construtor_metodos\obj\Debug\net7.0\aula02__classe_objeto_construtor_metodos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rzirb\Documents\faculdade\POO\POO-23-1\aula02__classe_objeto_construtor_metodos\obj\Debug\net7.0\aula02__classe_objeto_construtor_metodos.AssemblyInfoInputs.cache
+C:\Users\rzirb\Documents\faculdade\POO\POO-23-1\aula02__classe_objeto_construtor_metodos\obj\Debug\net7.0\aula02__classe_objeto_construtor_metodos.AssemblyInfo.cs
+C:\Users\rzirb\Documents\faculdade\POO\POO-23-1\aula02__classe_objeto_construtor_metodos\obj\Debug\net7.0\aula02__classe_objeto_construtor_metodos.csproj.CoreCompileInputs.cache
+C:\Users\rzirb\Documents\faculdade\POO\POO-23-1\aula02__classe_objeto_construtor_metodos\obj\Debug\net7.0\aula02__classe_objeto_construtor_metodos.dll
+C:\Users\rzirb\Documents\faculdade\POO\POO-23-1\aula02__classe_objeto_construtor_metodos\obj\Debug\net7.0\refint\aula02__classe_objeto_construtor_metodos.dll
+C:\Users\rzirb\Documents\faculdade\POO\POO-23-1\aula02__classe_objeto_construtor_metodos\obj\Debug\net7.0\aula02__classe_objeto_construtor_metodos.pdb
+C:\Users\rzirb\Documents\faculdade\POO\POO-23-1\aula02__classe_objeto_construtor_metodos\obj\Debug\net7.0\aula02__classe_objeto_construtor_metodos.genruntimeconfig.cache
+C:\Users\rzirb\Documents\faculdade\POO\POO-23-1\aula02__classe_objeto_construtor_metodos\obj\Debug\net7.0\ref\aula02__classe_objeto_construtor_metodos.dll
