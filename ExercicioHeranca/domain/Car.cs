@@ -13,16 +13,15 @@ namespace ExercicioHeranca.domain
             this.MaxSpeed = maxSpeed;
         }
 
-        public override void speedUp()
+        public new void speedUp(int maxSpeed)
         {
-            int speedLimit = MaxSpeed;
-            string modelo = Modelo;
-            Console.WriteLine($"O {modelo} está acelerando até sua velocidade máxima que é {speedLimit}km/h");
+            base.speedUp(maxSpeed);
         }
 
         public override void breakVehicle()
         {
-            Console.WriteLine("freando até para");
+            Console.WriteLine($"O {this.Modelo} está freando até parar");
+            Console.WriteLine("=============");
         }
     }
 }

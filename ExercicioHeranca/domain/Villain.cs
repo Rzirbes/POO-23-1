@@ -14,10 +14,10 @@ namespace ExercicioHeranca.domain
         public void toFight(Hero opponent)
         {
             base.toFight(opponent);
-            // if(opponent is SuperVilao)
-            // {
-            //     Console.WriteLine($"{this.Name} é um herói corajoso e enfrenta seu inimigo com bravura.");
-            // }
+            if(opponent is SuperHero)
+            {
+                Console.WriteLine($"{this.Name} é um herói corajoso e enfrenta seu inimigo com bravura.");
+            }
         }
     }
 }
