@@ -1,0 +1,15 @@
+C:\Users\rzirb\Documents\faculdade\POO\POO-23-1\aula03_list\bin\Debug\net7.0\aula03_list.exe
+C:\Users\rzirb\Documents\faculdade\POO\POO-23-1\aula03_list\bin\Debug\net7.0\aula03_list.deps.json
+C:\Users\rzirb\Documents\faculdade\POO\POO-23-1\aula03_list\bin\Debug\net7.0\aula03_list.runtimeconfig.json
+C:\Users\rzirb\Documents\faculdade\POO\POO-23-1\aula03_list\bin\Debug\net7.0\aula03_list.dll
+C:\Users\rzirb\Documents\faculdade\POO\POO-23-1\aula03_list\bin\Debug\net7.0\aula03_list.pdb
+C:\Users\rzirb\Documents\faculdade\POO\POO-23-1\aula03_list\obj\Debug\net7.0\aula03_list.csproj.AssemblyReference.cache
+C:\Users\rzirb\Documents\faculdade\POO\POO-23-1\aula03_list\obj\Debug\net7.0\aula03_list.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rzirb\Documents\faculdade\POO\POO-23-1\aula03_list\obj\Debug\net7.0\aula03_list.AssemblyInfoInputs.cache
+C:\Users\rzirb\Documents\faculdade\POO\POO-23-1\aula03_list\obj\Debug\net7.0\aula03_list.AssemblyInfo.cs
+C:\Users\rzirb\Documents\faculdade\POO\POO-23-1\aula03_list\obj\Debug\net7.0\aula03_list.csproj.CoreCompileInputs.cache
+C:\Users\rzirb\Documents\faculdade\POO\POO-23-1\aula03_list\obj\Debug\net7.0\aula03_list.dll
+C:\Users\rzirb\Documents\faculdade\POO\POO-23-1\aula03_list\obj\Debug\net7.0\refint\aula03_list.dll
+C:\Users\rzirb\Documents\faculdade\POO\POO-23-1\aula03_list\obj\Debug\net7.0\aula03_list.pdb
+C:\Users\rzirb\Documents\faculdade\POO\POO-23-1\aula03_list\obj\Debug\net7.0\aula03_list.genruntimeconfig.cache
+C:\Users\rzirb\Documents\faculdade\POO\POO-23-1\aula03_list\obj\Debug\net7.0\ref\aula03_list.dll

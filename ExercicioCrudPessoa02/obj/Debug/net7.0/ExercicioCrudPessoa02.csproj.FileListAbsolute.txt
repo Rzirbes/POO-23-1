@@ -1,0 +1,15 @@
+C:\Users\rzirb\Documents\faculdade\POO\POO-23-1\ExercicioCrudPessoa02\bin\Debug\net7.0\ExercicioCrudPessoa02.exe
+C:\Users\rzirb\Documents\faculdade\POO\POO-23-1\ExercicioCrudPessoa02\bin\Debug\net7.0\ExercicioCrudPessoa02.deps.json
+C:\Users\rzirb\Documents\faculdade\POO\POO-23-1\ExercicioCrudPessoa02\bin\Debug\net7.0\ExercicioCrudPessoa02.runtimeconfig.json
+C:\Users\rzirb\Documents\faculdade\POO\POO-23-1\ExercicioCrudPessoa02\bin\Debug\net7.0\ExercicioCrudPessoa02.dll
+C:\Users\rzirb\Documents\faculdade\POO\POO-23-1\ExercicioCrudPessoa02\bin\Debug\net7.0\ExercicioCrudPessoa02.pdb
+C:\Users\rzirb\Documents\faculdade\POO\POO-23-1\ExercicioCrudPessoa02\obj\Debug\net7.0\ExercicioCrudPessoa02.csproj.AssemblyReference.cache
+C:\Users\rzirb\Documents\faculdade\POO\POO-23-1\ExercicioCrudPessoa02\obj\Debug\net7.0\ExercicioCrudPessoa02.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rzirb\Documents\faculdade\POO\POO-23-1\ExercicioCrudPessoa02\obj\Debug\net7.0\ExercicioCrudPessoa02.AssemblyInfoInputs.cache
+C:\Users\rzirb\Documents\faculdade\POO\POO-23-1\ExercicioCrudPessoa02\obj\Debug\net7.0\ExercicioCrudPessoa02.AssemblyInfo.cs
+C:\Users\rzirb\Documents\faculdade\POO\POO-23-1\ExercicioCrudPessoa02\obj\Debug\net7.0\ExercicioCrudPessoa02.csproj.CoreCompileInputs.cache
+C:\Users\rzirb\Documents\faculdade\POO\POO-23-1\ExercicioCrudPessoa02\obj\Debug\net7.0\ExercicioCrudPessoa02.dll
+C:\Users\rzirb\Documents\faculdade\POO\POO-23-1\ExercicioCrudPessoa02\obj\Debug\net7.0\refint\ExercicioCrudPessoa02.dll
+C:\Users\rzirb\Documents\faculdade\POO\POO-23-1\ExercicioCrudPessoa02\obj\Debug\net7.0\ExercicioCrudPessoa02.pdb
+C:\Users\rzirb\Documents\faculdade\POO\POO-23-1\ExercicioCrudPessoa02\obj\Debug\net7.0\ExercicioCrudPessoa02.genruntimeconfig.cache
+C:\Users\rzirb\Documents\faculdade\POO\POO-23-1\ExercicioCrudPessoa02\obj\Debug\net7.0\ref\ExercicioCrudPessoa02.dll
