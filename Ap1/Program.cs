@@ -10,28 +10,28 @@ internal class Program
         PatientRepository patientRepository = new PatientRepository();
         MedicalAppoimentRepository medicalAppoimentRepository = new MedicalAppoimentRepository();
 
-        Doctor doctor = new Doctor("Adalberto", "033033033-02", "51 989898989", "098767/RS", "Cardiologia");
-        Doctor doctor02 = new Doctor("João", "033033033-02", "51 989898989", "098767/RS", "Clinico geral");
-        Doctor doctor03 = new Doctor("Pedro", "0808080-02", "51 8080080", "098767/RS", "Cardiologia", "Cirugião cardio vascular");
+        // Doctor doctor = new Doctor("Adalberto", "033033033-02", "51 989898989", "098767/RS", "Cardiologia");
+        // Doctor doctor02 = new Doctor("João", "033033033-02", "51 989898989", "098767/RS", "Clinico geral");
+        // Doctor doctor03 = new Doctor("Pedro", "0808080-02", "51 8080080", "098767/RS", "Cardiologia", "Cirugião cardio vascular");
 
-        doctorRepository.AddDoctor(doctor);
-        doctorRepository.AddDoctor(doctor02);
-        doctorRepository.AddDoctor(doctor03);
+        // doctorRepository.AddDoctor(doctor);
+        // doctorRepository.AddDoctor(doctor02);
+        // doctorRepository.AddDoctor(doctor03);
 
-        Patient patient = new Patient("Rômulo", "0932450349", "51 4576456", "Dor de cabeça");
-        Patient patient02 = new Patient("Anderson", "2343423", "51 9090909", "Diarreia");
-        Patient patient03 = new Patient("Rocha", "14234234", "51 445543434", "Pressão alta");
+        // Patient patient = new Patient("Rômulo", "0932450349", "51 4576456", "Dor de cabeça");
+        // Patient patient02 = new Patient("Anderson", "2343423", "51 9090909", "Diarreia");
+        // Patient patient03 = new Patient("Rocha", "14234234", "51 445543434", "Pressão alta");
 
-        patientRepository.AddPatient(patient);
-        patientRepository.AddPatient(patient02);
-        patientRepository.AddPatient(patient03);
+        // patientRepository.AddPatient(patient);
+        // patientRepository.AddPatient(patient02);
+        // patientRepository.AddPatient(patient03);
 
         
 
-        MedicalAppoiment medicalAppoimentTest = new MedicalAppoiment(new DateTime(2023, 04, 06, 14, 30, 0), doctor03, patient02);
-        MedicalAppoiment medicalAppoimentTest02 = new MedicalAppoiment(new DateTime(2023, 04, 17, 11, 30, 0), doctor02, patient03);
-        medicalAppoimentRepository.AddMedicalAppoiment(medicalAppoimentTest);
-        medicalAppoimentRepository.AddMedicalAppoiment(medicalAppoimentTest02);
+        // MedicalAppoiment medicalAppoimentTest = new MedicalAppoiment(new DateTime(2023, 04, 06, 14, 30, 0), doctor03, patient02);
+        // MedicalAppoiment medicalAppoimentTest02 = new MedicalAppoiment(new DateTime(2023, 04, 17, 11, 30, 0), doctor02, patient03);
+        // medicalAppoimentRepository.AddMedicalAppoiment(medicalAppoimentTest);
+        // medicalAppoimentRepository.AddMedicalAppoiment(medicalAppoimentTest02);
         
 
 
