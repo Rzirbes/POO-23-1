@@ -358,7 +358,7 @@ internal class Program
             Show($"Código da consulta: {medicalAppoiment.Id}");
             Show($"Nome do paciente: {medicalAppoiment.Patient.Name}, Doença: {medicalAppoiment.Patient.Illness}");
             Show($"Nome do Médico: {medicalAppoiment.Doctor.Name}, CRM: {medicalAppoiment.Doctor.CRM}");
-            Show($"Hora da consulta: {medicalAppoiment.AppoimentDate.ToString()}, CPF: {patient.CPF}, Telefone: {patient.Phone}");
+            Show($"Hora da consulta: {medicalAppoiment.AppoimentDate.ToString()}, CPF: {medicalAppoiment.Patient.CPF}, Telefone: {patient.Phone}");
             Show($"Telefone do Paciente: {medicalAppoiment.Patient.Phone}");
             Show("============================================");
         }
