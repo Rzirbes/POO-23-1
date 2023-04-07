@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace ExercicioHeranca.domain
+namespace Exercicio03Heranca.domain
 {
-    public class SuperVillain : Villain
+    public class SuperHero : Hero
     {
         public string SuperPower { get; set; }
         public int StrengthSuperPower { get; set; }
-        public SuperVillain(string name, int strength, int intelligence, string[] powers, string SuperPower, int strengthSuperPower) : base(name, strength, intelligence, powers)
+        public SuperHero(string name, int strength, int intelligence, string[] powers, string SuperPower, int strengthSuperPower) : base(name, strength, intelligence, powers)
         {
             this.Name = name;
             this.Strength = strength;

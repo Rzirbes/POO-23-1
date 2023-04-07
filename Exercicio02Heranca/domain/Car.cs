@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace ExercicioHeranca.domain
+namespace Exercicio02Heranca.domain
 {
     public class Car : Vehicle
     {
-        public int MaxSpeed { get; set; }
+      public int MaxSpeed { get; set; }
         public Car(string modelo, int maxSpeed) : base(modelo)
         {
             this.MaxSpeed = maxSpeed;
@@ -22,6 +22,6 @@ namespace ExercicioHeranca.domain
         {
             Console.WriteLine($"O {this.Modelo} está freando até parar");
             Console.WriteLine("=============");
-        }
+        }  
     }
 }

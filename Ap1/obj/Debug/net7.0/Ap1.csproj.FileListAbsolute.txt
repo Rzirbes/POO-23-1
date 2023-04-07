@@ -1,0 +1,15 @@
+C:\Users\rzirb\Documents\faculdade\POO\POO-23-1\Ap1\obj\Debug\net7.0\Ap1.csproj.AssemblyReference.cache
+C:\Users\rzirb\Documents\faculdade\POO\POO-23-1\Ap1\obj\Debug\net7.0\Ap1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rzirb\Documents\faculdade\POO\POO-23-1\Ap1\obj\Debug\net7.0\Ap1.AssemblyInfoInputs.cache
+C:\Users\rzirb\Documents\faculdade\POO\POO-23-1\Ap1\obj\Debug\net7.0\Ap1.AssemblyInfo.cs
+C:\Users\rzirb\Documents\faculdade\POO\POO-23-1\Ap1\obj\Debug\net7.0\Ap1.csproj.CoreCompileInputs.cache
+C:\Users\rzirb\Documents\faculdade\POO\POO-23-1\Ap1\bin\Debug\net7.0\Ap1.exe
+C:\Users\rzirb\Documents\faculdade\POO\POO-23-1\Ap1\bin\Debug\net7.0\Ap1.deps.json
+C:\Users\rzirb\Documents\faculdade\POO\POO-23-1\Ap1\bin\Debug\net7.0\Ap1.runtimeconfig.json
+C:\Users\rzirb\Documents\faculdade\POO\POO-23-1\Ap1\bin\Debug\net7.0\Ap1.dll
+C:\Users\rzirb\Documents\faculdade\POO\POO-23-1\Ap1\bin\Debug\net7.0\Ap1.pdb
+C:\Users\rzirb\Documents\faculdade\POO\POO-23-1\Ap1\obj\Debug\net7.0\Ap1.dll
+C:\Users\rzirb\Documents\faculdade\POO\POO-23-1\Ap1\obj\Debug\net7.0\refint\Ap1.dll
+C:\Users\rzirb\Documents\faculdade\POO\POO-23-1\Ap1\obj\Debug\net7.0\Ap1.pdb
+C:\Users\rzirb\Documents\faculdade\POO\POO-23-1\Ap1\obj\Debug\net7.0\Ap1.genruntimeconfig.cache
+C:\Users\rzirb\Documents\faculdade\POO\POO-23-1\Ap1\obj\Debug\net7.0\ref\Ap1.dll

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace ExercicioHeranca.domain
+namespace Exercicio02Heranca.domain
 {
     public abstract class Vehicle
     {
@@ -16,16 +16,11 @@ namespace ExercicioHeranca.domain
 
         public void speedUp(int maxSpeed)
         {
-            int currentSpeed = 0;
+            
             int speedLimit = maxSpeed;
             string modelo = Modelo;
-            while(currentSpeed < speedLimit)
-            {
-                Console.WriteLine("Velocidade: " + currentSpeed + " km/h");
-                currentSpeed += 5;
-            }
-            Console.WriteLine($"O {modelo} chegou ao seu limite de velocidade {speedLimit}km/h");
-            Console.WriteLine("=============");
+           
+            Console.WriteLine($"O {modelo} Está acelerando até chgegar seu limite de velocidade {speedLimit}km/h");
         }
         public abstract void breakVehicle();
     }

@@ -1,0 +1,15 @@
+C:\Users\rzirb\Documents\faculdade\POO\POO-23-1\Exercicio02Heranca\bin\Debug\net7.0\Exercicio02Heranca.exe
+C:\Users\rzirb\Documents\faculdade\POO\POO-23-1\Exercicio02Heranca\bin\Debug\net7.0\Exercicio02Heranca.deps.json
+C:\Users\rzirb\Documents\faculdade\POO\POO-23-1\Exercicio02Heranca\bin\Debug\net7.0\Exercicio02Heranca.runtimeconfig.json
+C:\Users\rzirb\Documents\faculdade\POO\POO-23-1\Exercicio02Heranca\bin\Debug\net7.0\Exercicio02Heranca.dll
+C:\Users\rzirb\Documents\faculdade\POO\POO-23-1\Exercicio02Heranca\bin\Debug\net7.0\Exercicio02Heranca.pdb
+C:\Users\rzirb\Documents\faculdade\POO\POO-23-1\Exercicio02Heranca\obj\Debug\net7.0\Exercicio02Heranca.csproj.AssemblyReference.cache
+C:\Users\rzirb\Documents\faculdade\POO\POO-23-1\Exercicio02Heranca\obj\Debug\net7.0\Exercicio02Heranca.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rzirb\Documents\faculdade\POO\POO-23-1\Exercicio02Heranca\obj\Debug\net7.0\Exercicio02Heranca.AssemblyInfoInputs.cache
+C:\Users\rzirb\Documents\faculdade\POO\POO-23-1\Exercicio02Heranca\obj\Debug\net7.0\Exercicio02Heranca.AssemblyInfo.cs
+C:\Users\rzirb\Documents\faculdade\POO\POO-23-1\Exercicio02Heranca\obj\Debug\net7.0\Exercicio02Heranca.csproj.CoreCompileInputs.cache
+C:\Users\rzirb\Documents\faculdade\POO\POO-23-1\Exercicio02Heranca\obj\Debug\net7.0\Exercicio02Heranca.dll
+C:\Users\rzirb\Documents\faculdade\POO\POO-23-1\Exercicio02Heranca\obj\Debug\net7.0\refint\Exercicio02Heranca.dll
+C:\Users\rzirb\Documents\faculdade\POO\POO-23-1\Exercicio02Heranca\obj\Debug\net7.0\Exercicio02Heranca.pdb
+C:\Users\rzirb\Documents\faculdade\POO\POO-23-1\Exercicio02Heranca\obj\Debug\net7.0\Exercicio02Heranca.genruntimeconfig.cache
+C:\Users\rzirb\Documents\faculdade\POO\POO-23-1\Exercicio02Heranca\obj\Debug\net7.0\ref\Exercicio02Heranca.dll

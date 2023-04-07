@@ -2,22 +2,15 @@
 using ExercicioHeranca.domain;
 
 // Exercício 1
-// Dog dog = new Dog("Pug");
-// Cat cat = new Cat("Bichano");
+Dog dog = new Dog("Pug");
+Cat cat = new Cat("Bichano");
 
-// Console.WriteLine($"O {dog.Name} falou:");
-// dog.Speak();
-// Console.WriteLine($"O {cat.Name} falou:");
-// cat.Speak();
+Console.WriteLine($"O {dog.Name} falou:");
+dog.Speak();
+Console.WriteLine($"O {cat.Name} falou:");
+cat.Speak();
 
-// Exercicio 2
-MotorBike moto = new MotorBike("Shineray", 200);
-Car car = new Car("Gol bolinha", 199);
 
-car.speedUp(car.MaxSpeed);
-car.breakVehicle();
-moto.speedUp(moto.MaxSpeed);
-moto.breakVehicle();
 
 // Exercicio 3
 // Hero ironMan = new Hero("Homem de Ferro", 50, 100, new string[]{"voo", "raio repulsor"});

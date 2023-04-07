@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace ExercicioHeranca.domain
+namespace Exercicio03Heranca.domain
 {
     public class Villain : Character
     {
@@ -16,7 +16,7 @@ namespace ExercicioHeranca.domain
             base.toFight(opponent);
             if(opponent is SuperHero)
             {
-                Console.WriteLine($"{this.Name} é um herói corajoso e enfrenta seu inimigo com bravura.");
+                Console.WriteLine($"{this.Name} é um vilão astuto e usa seus poderes para tentar vencer seu inimigo.");
             }
         }
     }

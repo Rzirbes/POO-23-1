@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace ExercicioHeranca.domain
+namespace Exercicio02Heranca.domain
 {
     public class MotorBike : Vehicle
     {
