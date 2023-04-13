@@ -46,5 +46,17 @@ namespace Ap1.repository
                 medicalAppoimentUpdate.Patient = medicalAppoiment.Patient;
             }
         }
+
+        public bool CheckIfAppoimentExists(DateTime appoimentDate)
+        {
+            foreach (MedicalAppoiment ma in _medicalAppoimentList)
+            {
+                if(ma.AppoimentDate == appoimentDate)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
     }
 }

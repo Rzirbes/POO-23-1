@@ -10,28 +10,28 @@ internal class Program
         PatientRepository patientRepository = new PatientRepository();
         MedicalAppoimentRepository medicalAppoimentRepository = new MedicalAppoimentRepository();
 
-        // Doctor doctor = new Doctor("Adalberto", "033033033-02", "51 989898989", "098767/RS", "Cardiologia");
-        // Doctor doctor02 = new Doctor("João", "033033033-02", "51 989898989", "098767/RS", "Clinico geral");
-        // Doctor doctor03 = new Doctor("Pedro", "0808080-02", "51 8080080", "098767/RS", "Cardiologia", "Cirugião cardio vascular");
+        Doctor doctor = new Doctor("Adalberto", "033033033-02", "51 989898989", "098767/RS", "Cardiologia");
+        Doctor doctor02 = new Doctor("João", "033033033-02", "51 989898989", "098767/RS", "Clinico geral");
+        Doctor doctor03 = new Doctor("Pedro", "0808080-02", "51 8080080", "098767/RS", "Cardiologia", "Cirugião cardio vascular");
+        
+        doctorRepository.AddDoctor(doctor);
+        doctorRepository.AddDoctor(doctor02);
+        doctorRepository.AddDoctor(doctor03);
 
-        // doctorRepository.AddDoctor(doctor);
-        // doctorRepository.AddDoctor(doctor02);
-        // doctorRepository.AddDoctor(doctor03);
+        Patient patient = new Patient("Rômulo", "0932450349", "51 4576456", "Dor de cabeça");
+        Patient patient02 = new Patient("Anderson", "2343423", "51 9090909", "Diarreia");
+        Patient patient03 = new Patient("Rocha", "14234234", "51 445543434", "Pressão alta");
 
-        // Patient patient = new Patient("Rômulo", "0932450349", "51 4576456", "Dor de cabeça");
-        // Patient patient02 = new Patient("Anderson", "2343423", "51 9090909", "Diarreia");
-        // Patient patient03 = new Patient("Rocha", "14234234", "51 445543434", "Pressão alta");
-
-        // patientRepository.AddPatient(patient);
-        // patientRepository.AddPatient(patient02);
-        // patientRepository.AddPatient(patient03);
+        patientRepository.AddPatient(patient);
+        patientRepository.AddPatient(patient02);
+        patientRepository.AddPatient(patient03);
 
         
 
-        // MedicalAppoiment medicalAppoimentTest = new MedicalAppoiment(new DateTime(2023, 04, 06, 14, 30, 0), doctor03, patient02);
-        // MedicalAppoiment medicalAppoimentTest02 = new MedicalAppoiment(new DateTime(2023, 04, 17, 11, 30, 0), doctor02, patient03);
-        // medicalAppoimentRepository.AddMedicalAppoiment(medicalAppoimentTest);
-        // medicalAppoimentRepository.AddMedicalAppoiment(medicalAppoimentTest02);
+        MedicalAppoiment medicalAppoimentTest = new MedicalAppoiment(new DateTime(2023, 04, 06, 14, 30, 0), doctor03, patient02);
+        MedicalAppoiment medicalAppoimentTest02 = new MedicalAppoiment(new DateTime(2023, 04, 17, 11, 30, 0), doctor02, patient03);
+        medicalAppoimentRepository.AddMedicalAppoiment(medicalAppoimentTest);
+        medicalAppoimentRepository.AddMedicalAppoiment(medicalAppoimentTest02);
         
 
 
@@ -43,7 +43,8 @@ internal class Program
             Show("2 - Menu paciente!");
             Show("3 - Fazer cadastro de uma nova Consulta!");
             Show("4 - Exibir consultas agendadas!");
-            Show("5 - Apagar uma consulta agendada!");
+            Show("5 - Exibir consultas agendadas por id do paciente!");
+            Show("6 - Apagar uma consulta agendada!");
             Show("0 - Sair");
             Show("");
 
@@ -64,6 +65,9 @@ internal class Program
                     ShowMedicalAppoiment();
                 break;
                 case 5:
+                    ShowAppoimentForPatient();
+                break;
+                case 6:
                     DeleteMedicalAppoiment();
                 break;
                 case 0:
@@ -319,6 +323,11 @@ internal class Program
     {
         Show("Digite data e horário da consulta (formato: dd/mm/aaaa hh:mm:ss)");
         DateTime appoimentDate = DateTime.Parse(Console.ReadLine()!);
+        if(medicalAppoimentRepository.CheckIfAppoimentExists(appoimentDate))
+        {
+            Show("Data de agendamento já existe, escolha outra data");
+            return;
+        }
 
         Doctor doctor = null!;
         while(doctor == null)
@@ -357,8 +366,9 @@ internal class Program
             Show("============================================");
             Show($"Código da consulta: {medicalAppoiment.Id}");
             Show($"Nome do paciente: {medicalAppoiment.Patient.Name}, Doença: {medicalAppoiment.Patient.Illness}");
+            Show($"CPF: {medicalAppoiment.Patient.CPF}");
             Show($"Nome do Médico: {medicalAppoiment.Doctor.Name}, CRM: {medicalAppoiment.Doctor.CRM}");
-            Show($"Hora da consulta: {medicalAppoiment.AppoimentDate.ToString()}, CPF: {medicalAppoiment.Patient.CPF}");
+            Show($"Hora da consulta: {medicalAppoiment.AppoimentDate.ToString()}");
             Show($"Telefone do Paciente: {medicalAppoiment.Patient.Phone}");
             Show("============================================");
         }
@@ -371,6 +381,28 @@ internal class Program
         MedicalAppoiment appoimentRemove = medicalAppoimentRepository.GetByIdMedicalAppoiment(id)!;
         medicalAppoimentRepository.RemoveMedicalAppoiment(appoimentRemove);
 
+    }
+
+    void ShowAppoimentForPatient()
+    {
+        Show("Digite o id do paciente que deseja consultar: ");
+        int idPatient = int.Parse(Console.ReadLine()!);
+        patientRepository.GetByIdPatient(idPatient);
+        foreach (var appoiment in medicalAppoimentRepository.GetAllMedicalAppoiment())
+        {
+            if(idPatient == appoiment.Patient.Id)
+            {
+                Show("============================================");
+                Show($"Código da consulta: {appoiment.Id}");
+                Show($"Nome do paciente: {appoiment.Patient.Name}, Doença: {appoiment.Patient.Illness}");
+                Show($"CPF: {appoiment.Patient.CPF}");
+                Show($"Nome do Médico: {appoiment.Doctor.Name}, CRM: {appoiment.Doctor.CRM}");
+                Show($"Hora da consulta: {appoiment.AppoimentDate.ToString()}");
+                Show($"Telefone do Paciente: {appoiment.Patient.Phone}");
+                Show("============================================");
+            }
+        }
+        
     }
     
 
