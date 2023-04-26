@@ -18,5 +18,7 @@ namespace Ap1.domain.models
             CPF = cpf;
             Phone = phone;
         }
+
+       
     }
 }

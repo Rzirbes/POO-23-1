@@ -1,0 +1,15 @@
+C:\Users\rzirb\Documents\faculdade\POO\POO-23-1\Exercicio04Aula10\bin\Debug\net7.0\Exercicio04Aula10.exe
+C:\Users\rzirb\Documents\faculdade\POO\POO-23-1\Exercicio04Aula10\bin\Debug\net7.0\Exercicio04Aula10.deps.json
+C:\Users\rzirb\Documents\faculdade\POO\POO-23-1\Exercicio04Aula10\bin\Debug\net7.0\Exercicio04Aula10.runtimeconfig.json
+C:\Users\rzirb\Documents\faculdade\POO\POO-23-1\Exercicio04Aula10\bin\Debug\net7.0\Exercicio04Aula10.dll
+C:\Users\rzirb\Documents\faculdade\POO\POO-23-1\Exercicio04Aula10\bin\Debug\net7.0\Exercicio04Aula10.pdb
+C:\Users\rzirb\Documents\faculdade\POO\POO-23-1\Exercicio04Aula10\obj\Debug\net7.0\Exercicio04Aula10.csproj.AssemblyReference.cache
+C:\Users\rzirb\Documents\faculdade\POO\POO-23-1\Exercicio04Aula10\obj\Debug\net7.0\Exercicio04Aula10.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rzirb\Documents\faculdade\POO\POO-23-1\Exercicio04Aula10\obj\Debug\net7.0\Exercicio04Aula10.AssemblyInfoInputs.cache
+C:\Users\rzirb\Documents\faculdade\POO\POO-23-1\Exercicio04Aula10\obj\Debug\net7.0\Exercicio04Aula10.AssemblyInfo.cs
+C:\Users\rzirb\Documents\faculdade\POO\POO-23-1\Exercicio04Aula10\obj\Debug\net7.0\Exercicio04Aula10.csproj.CoreCompileInputs.cache
+C:\Users\rzirb\Documents\faculdade\POO\POO-23-1\Exercicio04Aula10\obj\Debug\net7.0\Exercicio04Aula10.dll
+C:\Users\rzirb\Documents\faculdade\POO\POO-23-1\Exercicio04Aula10\obj\Debug\net7.0\refint\Exercicio04Aula10.dll
+C:\Users\rzirb\Documents\faculdade\POO\POO-23-1\Exercicio04Aula10\obj\Debug\net7.0\Exercicio04Aula10.pdb
+C:\Users\rzirb\Documents\faculdade\POO\POO-23-1\Exercicio04Aula10\obj\Debug\net7.0\Exercicio04Aula10.genruntimeconfig.cache
+C:\Users\rzirb\Documents\faculdade\POO\POO-23-1\Exercicio04Aula10\obj\Debug\net7.0\ref\Exercicio04Aula10.dll
