@@ -1,0 +1,15 @@
+C:\Users\rzirb\Documents\faculdade\POO\POO-23-1\exercicioAula11\Exercicio02\bin\Debug\net7.0\Exercicio02.exe
+C:\Users\rzirb\Documents\faculdade\POO\POO-23-1\exercicioAula11\Exercicio02\bin\Debug\net7.0\Exercicio02.deps.json
+C:\Users\rzirb\Documents\faculdade\POO\POO-23-1\exercicioAula11\Exercicio02\bin\Debug\net7.0\Exercicio02.runtimeconfig.json
+C:\Users\rzirb\Documents\faculdade\POO\POO-23-1\exercicioAula11\Exercicio02\bin\Debug\net7.0\Exercicio02.dll
+C:\Users\rzirb\Documents\faculdade\POO\POO-23-1\exercicioAula11\Exercicio02\bin\Debug\net7.0\Exercicio02.pdb
+C:\Users\rzirb\Documents\faculdade\POO\POO-23-1\exercicioAula11\Exercicio02\obj\Debug\net7.0\Exercicio02.csproj.AssemblyReference.cache
+C:\Users\rzirb\Documents\faculdade\POO\POO-23-1\exercicioAula11\Exercicio02\obj\Debug\net7.0\Exercicio02.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rzirb\Documents\faculdade\POO\POO-23-1\exercicioAula11\Exercicio02\obj\Debug\net7.0\Exercicio02.AssemblyInfoInputs.cache
+C:\Users\rzirb\Documents\faculdade\POO\POO-23-1\exercicioAula11\Exercicio02\obj\Debug\net7.0\Exercicio02.AssemblyInfo.cs
+C:\Users\rzirb\Documents\faculdade\POO\POO-23-1\exercicioAula11\Exercicio02\obj\Debug\net7.0\Exercicio02.csproj.CoreCompileInputs.cache
+C:\Users\rzirb\Documents\faculdade\POO\POO-23-1\exercicioAula11\Exercicio02\obj\Debug\net7.0\Exercicio02.dll
+C:\Users\rzirb\Documents\faculdade\POO\POO-23-1\exercicioAula11\Exercicio02\obj\Debug\net7.0\refint\Exercicio02.dll
+C:\Users\rzirb\Documents\faculdade\POO\POO-23-1\exercicioAula11\Exercicio02\obj\Debug\net7.0\Exercicio02.pdb
+C:\Users\rzirb\Documents\faculdade\POO\POO-23-1\exercicioAula11\Exercicio02\obj\Debug\net7.0\Exercicio02.genruntimeconfig.cache
+C:\Users\rzirb\Documents\faculdade\POO\POO-23-1\exercicioAula11\Exercicio02\obj\Debug\net7.0\ref\Exercicio02.dll
