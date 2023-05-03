@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\rzirb\\Documents\\faculdade\\POO\\POO-23-1\\Exercicio04Aula10\\Exercicio04Aula10.csproj",
+      "projectUniqueName": "C:\\Users\\rzirb\\Documents\\faculdade\\POO\\POO-23-1\\ExerciciosAula10\\Exercicio04Aula10\\Exercicio04Aula10.csproj",
       "projectName": "Exercicio04Aula10",
-      "projectPath": "C:\\Users\\rzirb\\Documents\\faculdade\\POO\\POO-23-1\\Exercicio04Aula10\\Exercicio04Aula10.csproj",
+      "projectPath": "C:\\Users\\rzirb\\Documents\\faculdade\\POO\\POO-23-1\\ExerciciosAula10\\Exercicio04Aula10\\Exercicio04Aula10.csproj",
       "packagesPath": "C:\\Users\\rzirb\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\rzirb\\Documents\\faculdade\\POO\\POO-23-1\\Exercicio04Aula10\\obj\\",
+      "outputPath": "C:\\Users\\rzirb\\Documents\\faculdade\\POO\\POO-23-1\\ExerciciosAula10\\Exercicio04Aula10\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\rzirb\\AppData\\Roaming\\NuGet\\NuGet.Config"

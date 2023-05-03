@@ -1,8 +1,11 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿
 using Exercicio03Aula10;
 
-Console.WriteLine("Hello, World!");
 
 
-var cachorro = new Cachorro("Toto", "Pedro");
-var gato = new Gato("Bichano", "João");
+
+IAnimalEstimacao cachorro = new Cachorro("Toto", "Pedro");
+IAnimalEstimacao gato = new Gato("Bichano", "João");
+
+Console.WriteLine($"Nome: {cachorro.Nome}, Dono: {cachorro.Dono}");
+Console.WriteLine($"Nome: {gato.Nome}, Dono: {gato.Dono}");
