@@ -13,11 +13,17 @@ namespace Ap2.Menus
         private DataContext db;
         private PatientRepository patientRepository;
 
-        public MenuPatient()
+        public MenuPatient(DataContext db, PatientRepository patientRepository)
         {
-            db = new DataContext();
-            patientRepository = new PatientRepository(db);
+            this.db = db;
+            this.patientRepository = patientRepository;
         }
+
+        // public MenuPatient()
+        // {
+        //     db = new DataContext();
+        //     patientRepository = new PatientRepository(db);
+        // }
         public void PatientMenu()
         {
             while (true)

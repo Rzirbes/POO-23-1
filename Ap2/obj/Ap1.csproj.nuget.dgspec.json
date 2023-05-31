@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\rzirb\\Documents\\faculdade\\POO\\Ap2\\Ap1.csproj": {}
+    "C:\\Users\\rzirb\\Documents\\faculdade\\POO\\POO-23-1\\Ap2\\Ap1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\rzirb\\Documents\\faculdade\\POO\\Ap2\\Ap1.csproj": {
+    "C:\\Users\\rzirb\\Documents\\faculdade\\POO\\POO-23-1\\Ap2\\Ap1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rzirb\\Documents\\faculdade\\POO\\Ap2\\Ap1.csproj",
+        "projectUniqueName": "C:\\Users\\rzirb\\Documents\\faculdade\\POO\\POO-23-1\\Ap2\\Ap1.csproj",
         "projectName": "Ap1",
-        "projectPath": "C:\\Users\\rzirb\\Documents\\faculdade\\POO\\Ap2\\Ap1.csproj",
+        "projectPath": "C:\\Users\\rzirb\\Documents\\faculdade\\POO\\POO-23-1\\Ap2\\Ap1.csproj",
         "packagesPath": "C:\\Users\\rzirb\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rzirb\\Documents\\faculdade\\POO\\Ap2\\obj\\",
+        "outputPath": "C:\\Users\\rzirb\\Documents\\faculdade\\POO\\POO-23-1\\Ap2\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\rzirb\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\rzirb\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -69,7 +71,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

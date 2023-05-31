@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Ap2.Data;
 using Ap2.Menus;
 
-namespace Ap2.Menu
+namespace Ap2.Menus
 {
     public class IndexMenu
     {
@@ -14,13 +14,23 @@ namespace Ap2.Menu
         private MenuPatient menuPatient;
         private MenuMedicalAppoiment menuAppoiment;
 
-        public IndexMenu()
+        public IndexMenu(DataContext db, MenuDoctor menuDoctor, MenuPatient menuPatient, MenuMedicalAppoiment menuAppoiment)
         {
-            db = new DataContext();
-            menuDoctor = new MenuDoctor();
-            menuPatient = new MenuPatient();
-            menuAppoiment = new MenuMedicalAppoiment();
+            this.db = db;
+            this.menuDoctor = menuDoctor;
+            this.menuPatient = menuPatient;
+            this.menuAppoiment = menuAppoiment;
         }
+
+
+
+        // public IndexMenu()
+        // {
+        //     db = new DataContext();
+        //     menuDoctor = new MenuDoctor();
+        //     menuPatient = new MenuPatient();
+        //     menuAppoiment = new MenuMedicalAppoiment();
+        // }
 
 
         public void MenuIndex()

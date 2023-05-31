@@ -16,13 +16,21 @@ namespace Ap2.Menus
         private DoctorRepository doctorRepository;
         private PatientRepository patientRepository;
 
-        public MenuMedicalAppoiment()
+        public MenuMedicalAppoiment(DataContext db, MedicalAppoimentRepository medicalAppoimentRepository, DoctorRepository doctorRepository, PatientRepository patientRepository)
         {
-            db = new DataContext();
-            medicalAppoimentRepository = new MedicalAppoimentRepository(db);
-            doctorRepository = new DoctorRepository(db);
-            patientRepository = new PatientRepository(db);
+            this.db = db;
+            this.medicalAppoimentRepository = medicalAppoimentRepository;
+            this.doctorRepository = doctorRepository;
+            this.patientRepository = patientRepository;
         }
+
+        // public MenuMedicalAppoiment()
+        // {
+        //     db = new DataContext();
+        //     medicalAppoimentRepository = new MedicalAppoimentRepository(db);
+        //     doctorRepository = new DoctorRepository(db);
+        //     patientRepository = new PatientRepository(db);
+        // }
         public void AppoimentMenu()
         {
             while (true)

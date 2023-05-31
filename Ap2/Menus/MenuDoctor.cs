@@ -14,11 +14,17 @@ namespace Ap2.Menus
         private DataContext db;
         private DoctorRepository doctorRepository;
 
-        public MenuDoctor()
+        public MenuDoctor(DataContext db, DoctorRepository doctorRepository)
         {
-            db = new DataContext();
-            doctorRepository = new DoctorRepository(db);
+            this.db = db;
+            this.doctorRepository = doctorRepository;
         }
+
+        // public MenuDoctor()
+        // {
+        //     db = new DataContext();
+        //     doctorRepository = new DoctorRepository(db);
+        // }
 
 
 
