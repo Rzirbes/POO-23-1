@@ -11,15 +11,15 @@ internal class Program
     private static void Main(string[] args)
     {
         var serviceProvider = new ServiceCollection()
-    .AddTransient<DataContext>() // Registro da dependência DataContext
-    .AddTransient<MedicalAppoimentRepository>() // Registro da dependência MedicalAppoimentRepository
-    .AddTransient<DoctorRepository>() // Registro da dependência DoctorRepository
-    .AddTransient<PatientRepository>() // Registro da dependência PatientRepository
-    .AddTransient<MenuDoctor>() // Registro da dependência MenuDoctor
-    .AddTransient<MenuPatient>() // Registro da dependência MenuPatient
-    .AddTransient<MenuMedicalAppoiment>() // Registro da dependência MenuMedicalAppoiment
-    .AddTransient<IndexMenu>() // Registro da dependência IndexMenu
-    .BuildServiceProvider();
+            .AddTransient<DataContext>() // Registro da dependência DataContext
+            .AddTransient<MedicalAppoimentRepository>() // Registro da dependência MedicalAppoimentRepository
+            .AddTransient<DoctorRepository>() // Registro da dependência DoctorRepository
+            .AddTransient<PatientRepository>() // Registro da dependência PatientRepository
+            .AddTransient<MenuDoctor>() // Registro da dependência MenuDoctor
+            .AddTransient<MenuPatient>() // Registro da dependência MenuPatient
+            .AddTransient<MenuMedicalAppoiment>() // Registro da dependência MenuMedicalAppoiment
+            .AddTransient<IndexMenu>() // Registro da dependência IndexMenu
+            .BuildServiceProvider();
 
         var menuIndex = serviceProvider.GetRequiredService<IndexMenu>();
 
