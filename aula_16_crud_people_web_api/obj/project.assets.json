@@ -1719,9 +1719,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\rzirb\\Documents\\faculdade\\POO\\POO-23-1\\aula_16_crud_people_web_api\\aula12_ef_test.csproj",
-      "projectName": "aula12_ef_test",
-      "projectPath": "C:\\Users\\rzirb\\Documents\\faculdade\\POO\\POO-23-1\\aula_16_crud_people_web_api\\aula12_ef_test.csproj",
+      "projectUniqueName": "C:\\Users\\rzirb\\Documents\\faculdade\\POO\\POO-23-1\\aula_16_crud_people_web_api\\aula_16_ef_test.csproj",
+      "projectName": "aula_16_ef_test",
+      "projectPath": "C:\\Users\\rzirb\\Documents\\faculdade\\POO\\POO-23-1\\aula_16_crud_people_web_api\\aula_16_ef_test.csproj",
       "packagesPath": "C:\\Users\\rzirb\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\rzirb\\Documents\\faculdade\\POO\\POO-23-1\\aula_16_crud_people_web_api\\obj\\",
       "projectStyle": "PackageReference",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9HFpsvTbCPCeDfCZgjxHvArTCId9uZJeQmUQWs9Mgn/cIGRYiw+pBLV//TgT3cP7b/6dOUfjr0n5DjMyb7bJFQ==",
+  "dgSpecHash": "m5NHOxLRbq6Q3LlVNYokgrr65VEUxg+fZngPjfLPoKLGLhytG2lHJnQ1zuURY8hoUTNBCCov1APFgBE0Iy+6GA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\rzirb\\Documents\\faculdade\\POO\\POO-23-1\\aula_16_crud_people_web_api\\aula12_ef_test.csproj",
+  "projectFilePath": "C:\\Users\\rzirb\\Documents\\faculdade\\POO\\POO-23-1\\aula_16_crud_people_web_api\\aula_16_ef_test.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\rzirb\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\rzirb\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.5\\microsoft.aspnetcore.openapi.7.0.5.nupkg.sha512",

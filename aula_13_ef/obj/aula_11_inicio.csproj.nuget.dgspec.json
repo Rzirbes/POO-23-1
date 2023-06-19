@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\rzirb\\Documents\\faculdade\\POO\\POO-23-1\\aula_11_inicio\\aula_11_inicio.csproj": {}
+    "C:\\Users\\rzirb\\Documents\\faculdade\\POO\\POO-23-1\\aula_13_ef\\aula_11_inicio.csproj": {}
   },
   "projects": {
-    "C:\\Users\\rzirb\\Documents\\faculdade\\POO\\POO-23-1\\aula_11_inicio\\aula_11_inicio.csproj": {
+    "C:\\Users\\rzirb\\Documents\\faculdade\\POO\\POO-23-1\\aula_13_ef\\aula_11_inicio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rzirb\\Documents\\faculdade\\POO\\POO-23-1\\aula_11_inicio\\aula_11_inicio.csproj",
+        "projectUniqueName": "C:\\Users\\rzirb\\Documents\\faculdade\\POO\\POO-23-1\\aula_13_ef\\aula_11_inicio.csproj",
         "projectName": "aula_11_inicio",
-        "projectPath": "C:\\Users\\rzirb\\Documents\\faculdade\\POO\\POO-23-1\\aula_11_inicio\\aula_11_inicio.csproj",
+        "projectPath": "C:\\Users\\rzirb\\Documents\\faculdade\\POO\\POO-23-1\\aula_13_ef\\aula_11_inicio.csproj",
         "packagesPath": "C:\\Users\\rzirb\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rzirb\\Documents\\faculdade\\POO\\POO-23-1\\aula_11_inicio\\obj\\",
+        "outputPath": "C:\\Users\\rzirb\\Documents\\faculdade\\POO\\POO-23-1\\aula_13_ef\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\rzirb\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\rzirb\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -65,7 +67,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

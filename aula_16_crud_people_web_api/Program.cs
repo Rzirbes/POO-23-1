@@ -1,10 +1,11 @@
-﻿using aula12_ef_continuacao.Data.Repositories;
-using aula12_ef_continuacao.Domain.Interfaces;
-using aula12_ef_test.Data;
+﻿
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
+using aula12_ef_test.Model.Data.Repositories;
+using Microsoft.Extensions.Hosting;
+using aula_16_ef_test.Model.Domain.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -19,11 +20,11 @@ builder.Services.AddSwaggerGen();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
-// if (app.Environment.IsDevelopment())
-// {
+ //if (app.Environment.IsDevelopment())
+ //{
     app.UseSwagger();
     app.UseSwaggerUI();
-// }
+//}
 
 app.UseHttpsRedirection();
 

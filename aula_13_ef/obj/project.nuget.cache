@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "JzzYfblriyUS7wxjKy0CghvtoQVRCp2waGq1k6l6DNFn9cNFjeya9mTy4ESiOjxoRcZclBPAjyd6hfp1797Ikw==",
+  "dgSpecHash": "qdNTa6AHxYz8SfJI/7yLHz/zhpeP3+wwJikbHdygi4/+uZThn2b7fIhvNRmcqQmM2lT7GYJ95KSV1oqZrpkxzw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\rzirb\\Documents\\faculdade\\POO\\POO-23-1\\aula_11_inicio\\aula_11_inicio.csproj",
+  "projectFilePath": "C:\\Users\\rzirb\\Documents\\faculdade\\POO\\POO-23-1\\aula_13_ef\\aula_11_inicio.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\rzirb\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\rzirb\\.nuget\\packages\\microsoft.data.sqlite.core\\7.0.5\\microsoft.data.sqlite.core.7.0.5.nupkg.sha512",
