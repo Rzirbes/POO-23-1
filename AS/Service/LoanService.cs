@@ -19,7 +19,7 @@ namespace AS.Services
             _bookRepository = bookRepository;
         }
 
-        public async Task LoanBook(int userId, int bookId)
+        public async Task LoanBook(int userId, int bookId, DateTime loanDate)
         {
             // Verificar se o usuário existe
             var user = await _userRepository.GetByIdAsync(userId);
@@ -46,7 +46,7 @@ namespace AS.Services
             {
                 UserId = userId,
                 BookId = bookId,
-                LoanDate = DateTime.Now
+                LoanDate = loanDate
             };
 
             await _loanRepository.AddAsync(loan);

@@ -5,7 +5,7 @@ namespace AS.Services
 {
     public interface ILoanService
     {
-        Task LoanBook(int userId, int bookId);
+        Task LoanBook(int userId, int bookId, DateTime loanDate);
         Task<List<Loan>> GetAllAsync();
     }
 }

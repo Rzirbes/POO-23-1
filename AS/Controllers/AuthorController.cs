@@ -1,6 +1,7 @@
 ﻿using System.Threading.Tasks;
 using AS.Domain.DTOs;
 using AS.Domain.Entities;
+using AS.Domain.ViewModels;
 using AS.Services;
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
@@ -41,24 +42,28 @@ namespace AS.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> CreateAuthor([FromBody] AuthorDTO authorDTO)
+        public async Task<IActionResult> CreateAuthor([FromBody] AuthorViewModel authorViewModel)
         {
-            if (!ModelState.IsValid) return HttpMessageError("Dados incorretos");
-            var author = _mapper.Map<Author>(authorDTO);
+            if (!ModelState.IsValid)
+                return BadRequest("Dados incorretos");
+
+            var author = _mapper.Map<Author>(authorViewModel);
             await _authorService.CreateAuthorAsync(author);
             var createdAuthorDTO = _mapper.Map<AuthorDTO>(author);
             return CreatedAtAction(nameof(GetAuthorById), new { id = author.Id }, createdAuthorDTO);
         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> UpdateAuthor(int id, [FromBody] AuthorDTO authorDTO)
+        public async Task<IActionResult> UpdateAuthor(int id, [FromBody] AuthorViewModel authorViewModel)
         {
-            if (!ModelState.IsValid) return HttpMessageError("Dados incorretos");
+            if (!ModelState.IsValid)
+                return BadRequest("Dados incorretos");
 
-            var author = _mapper.Map<Author>(authorDTO);
+            var author = _mapper.Map<Author>(authorViewModel);
             await _authorService.UpdateAuthorAsync(author);
             return NoContent();
         }
+
 
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteAuthor(int id)

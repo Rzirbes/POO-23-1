@@ -3,6 +3,7 @@ using System.Threading.Tasks;
 using AS.Domain.DTOs;
 using AS.Domain.Entities;
 using AS.Domain.Interfaces.ServicesInterfaces;
+using AS.Domain.ViewModels;
 using AS.Service;
 using AS.Services;
 using AutoMapper;
@@ -46,10 +47,12 @@ namespace AS.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> CreateBook(BookDTO bookDTO)
+        public async Task<IActionResult> CreateBook([FromBody] BookViewModel bookViewModel)
         {
-            if (!ModelState.IsValid) return HttpMessageError("Dados incorretos");
-            var book = _mapper.Map<Book>(bookDTO);
+            if (!ModelState.IsValid)
+                return BadRequest("Dados incorretos");
+
+            var book = _mapper.Map<Book>(bookViewModel);
 
             if (book.Authors != null && book.Authors.Any())
             {
@@ -70,14 +73,16 @@ namespace AS.Controllers
         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> UpdateBook(int id, BookDTO bookDTO)
+        public async Task<IActionResult> UpdateBook(int id, [FromBody] BookViewModel bookViewModel)
         {
-            if (!ModelState.IsValid) return HttpMessageError("Dados incorretos");
+            if (!ModelState.IsValid)
+                return BadRequest("Dados incorretos");
 
-            var book = _mapper.Map<Book>(bookDTO);
+            var book = _mapper.Map<Book>(bookViewModel);
             await _bookService.UpdateAsync(book);
             return NoContent();
         }
+
 
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteBook(int id)

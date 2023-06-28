@@ -2,6 +2,7 @@
 using System.Threading.Tasks;
 using AS.Domain.DTOs;
 using AS.Domain.Entities;
+using AS.Domain.ViewModels;
 using AS.Services;
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
@@ -42,23 +43,33 @@ namespace AS.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> CreateUser([FromBody] UserDTO userDTO)
+        public async Task<IActionResult> CreateUser([FromBody] UserViewModel userViewModel)
         {
-            if (!ModelState.IsValid) return HttpMessageError("Dados incorretos");
-            var user = _mapper.Map<User>(userDTO);
+            if (!ModelState.IsValid)
+                return BadRequest("Dados incorretos");
+
+            var user = _mapper.Map<User>(userViewModel);
             await _userService.CreateUserAsync(user);
+
             return Ok();
         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> UpdateUser(int id, [FromBody] UserDTO userDTO)
+        public async Task<IActionResult> UpdateUser(int id, [FromBody] UserViewModel userViewModel)
         {
-            if (!ModelState.IsValid) return HttpMessageError("Dados incorretos");
+            if (!ModelState.IsValid)
+                return BadRequest("Dados incorretos");
 
-            var user = _mapper.Map<User>(userDTO);
+            var user = await _userService.GetUserByIdAsync(id);
+            if (user == null)
+                return NotFound();
+
+            _mapper.Map(userViewModel, user);
             await _userService.UpdateUserAsync(user);
+
             return Ok();
         }
+
 
         [HttpDelete("{id}")]
         public async Task<ActionResult> DeleteUser(int id)

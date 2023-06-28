@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v7.0": {
       "AS/1.0.0": {
         "dependencies": {
+          "AutoMapper": "12.0.1",
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.1",
           "FluentValidation": "11.4.0",
           "Microsoft.AspNetCore.Mvc.NewtonsoftJson": "7.0.4",

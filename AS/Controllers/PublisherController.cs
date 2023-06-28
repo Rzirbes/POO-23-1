@@ -2,6 +2,7 @@
 using System.Threading.Tasks;
 using AS.Domain.DTOs;
 using AS.Domain.Entities;
+using AS.Domain.ViewModels;
 using AS.Services;
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
@@ -42,23 +43,33 @@ namespace AS.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> CreatePublisher([FromBody] PublisherDTO publisherDTO)
+        public async Task<IActionResult> CreatePublisher([FromBody] PublisherViewModel publisherViewModel)
         {
-            if (!ModelState.IsValid) return HttpMessageError("Dados incorretos");
-            var publisher = _mapper.Map<Publisher>(publisherDTO);
+            if (!ModelState.IsValid)
+                return BadRequest("Dados incorretos");
+
+            var publisher = _mapper.Map<Publisher>(publisherViewModel);
             await _publisherService.CreatePublisherAsync(publisher);
+
             return Ok();
         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> UpdatePublisher(int id, [FromBody] PublisherDTO publisherDTO)
+        public async Task<IActionResult> UpdatePublisher(int id, [FromBody] PublisherViewModel publisherViewModel)
         {
-            if (!ModelState.IsValid) return HttpMessageError("Dados incorretos");
+            if (!ModelState.IsValid)
+                return BadRequest("Dados incorretos");
 
-            var publisher = _mapper.Map<Publisher>(publisherDTO);
+            var publisher = await _publisherService.GetPublisherByIdAsync(id);
+            if (publisher == null)
+                return NotFound();
+
+            _mapper.Map(publisherViewModel, publisher);
             await _publisherService.UpdatePublisherAsync(publisher);
+
             return Ok();
         }
+
 
         [HttpDelete("{id}")]
         public async Task<ActionResult> DeletePublisher(int id)

@@ -1,5 +1,6 @@
 ﻿using AS.Domain.DTOs;
 using AS.Domain.Entities;
+using AS.Domain.ViewModels;
 using AS.Services;
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
@@ -22,11 +23,14 @@ namespace AS.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> LoanBook(int userId, int bookId)
+        public async Task<IActionResult> LoanBook([FromBody] LoanViewModel loanViewModel)
         {
+            if (!ModelState.IsValid)
+                return BadRequest("Dados incorretos");
+
             try
             {
-                await _loanService.LoanBook(userId, bookId);
+                await _loanService.LoanBook(loanViewModel.UserId, loanViewModel.BookId, loanViewModel.LoanDate);
                 return Ok("Book loaned successfully.");
             }
             catch (Exception ex)
@@ -34,6 +38,7 @@ namespace AS.Controllers
                 return BadRequest(ex.Message);
             }
         }
+
 
         [HttpGet]
         public async Task<IActionResult> GetAllLoans()
