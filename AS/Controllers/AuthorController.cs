@@ -1,6 +1,8 @@
 ﻿using System.Threading.Tasks;
+using AS.Domain.DTOs;
 using AS.Domain.Entities;
 using AS.Services;
+using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AS.Controllers
@@ -10,17 +12,20 @@ namespace AS.Controllers
     public class AuthorController : ControllerBase
     {
         private readonly AuthorService _authorService;
+        private readonly IMapper _mapper;
 
-        public AuthorController(AuthorService authorService)
+        public AuthorController(AuthorService authorService, IMapper mapper)
         {
             _authorService = authorService;
+            _mapper = mapper;
         }
 
         [HttpGet]
         public async Task<IActionResult> GetAllAuthors()
         {
             var authors = await _authorService.GetAllAuthorsAsync();
-            return Ok(authors);
+            var authorDTOs = _mapper.Map<List<AuthorDTO>>(authors);
+            return Ok(authorDTOs);
         }
 
         [HttpGet("{id}")]
@@ -31,22 +36,26 @@ namespace AS.Controllers
             if (author == null)
                 return NotFound();
 
-            return Ok(author);
+            var authorDTO = _mapper.Map<AuthorDTO>(author);
+            return Ok(authorDTO);
         }
 
         [HttpPost]
-        public async Task<IActionResult> CreateAuthor([FromBody] Author author)
+        public async Task<IActionResult> CreateAuthor([FromBody] AuthorDTO authorDTO)
         {
+            if (!ModelState.IsValid) return HttpMessageError("Dados incorretos");
+            var author = _mapper.Map<Author>(authorDTO);
             await _authorService.CreateAuthorAsync(author);
-            return CreatedAtAction(nameof(GetAuthorById), new { id = author.Id }, author);
+            var createdAuthorDTO = _mapper.Map<AuthorDTO>(author);
+            return CreatedAtAction(nameof(GetAuthorById), new { id = author.Id }, createdAuthorDTO);
         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> UpdateAuthor(int id, [FromBody] Author author)
+        public async Task<IActionResult> UpdateAuthor(int id, [FromBody] AuthorDTO authorDTO)
         {
-            if (id != author.Id)
-                return BadRequest();
+            if (!ModelState.IsValid) return HttpMessageError("Dados incorretos");
 
+            var author = _mapper.Map<Author>(authorDTO);
             await _authorService.UpdateAuthorAsync(author);
             return NoContent();
         }
@@ -56,6 +65,14 @@ namespace AS.Controllers
         {
             await _authorService.DeleteAuthorAsync(id);
             return NoContent();
+        }
+
+        private IActionResult HttpMessageError(string message = "")
+        {
+            return BadRequest(new
+            {
+                message
+            });
         }
     }
 }

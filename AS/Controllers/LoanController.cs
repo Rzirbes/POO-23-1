@@ -1,5 +1,7 @@
-﻿using AS.Domain.Entities;
+﻿using AS.Domain.DTOs;
+using AS.Domain.Entities;
 using AS.Services;
+using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Threading.Tasks;
@@ -11,10 +13,12 @@ namespace AS.Controllers
     public class LoansController : ControllerBase
     {
         private readonly ILoanService _loanService;
+        private readonly IMapper _mapper;
 
-        public LoansController(ILoanService loanService)
+        public LoansController(ILoanService loanService, IMapper mapper)
         {
             _loanService = loanService;
+            _mapper = mapper;
         }
 
         [HttpPost]
@@ -37,7 +41,8 @@ namespace AS.Controllers
             try
             {
                 var loans = await _loanService.GetAllAsync();
-                return Ok(loans);
+                var loanDTOs = _mapper.Map<List<LoanDTO>>(loans);
+                return Ok(loanDTOs);
             }
             catch (Exception ex)
             {
