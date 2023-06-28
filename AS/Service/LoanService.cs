@@ -51,5 +51,9 @@ namespace AS.Services
 
             await _loanRepository.AddAsync(loan);
         }
+        public async Task<List<Loan>> GetAllAsync()
+        {
+            return await _loanRepository.GetAllAsync();
+        }
     }
 }
