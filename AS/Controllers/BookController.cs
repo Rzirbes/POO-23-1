@@ -14,9 +14,10 @@ namespace AS.Controllers
         private readonly BookService _bookService;
         private readonly AuthorService _authorService;
 
-        public BooksController(BookService bookService)
+        public BooksController(BookService bookService, AuthorService authorService)
         {
             _bookService = bookService;
+            _authorService = authorService;
         }
 
         [HttpGet]

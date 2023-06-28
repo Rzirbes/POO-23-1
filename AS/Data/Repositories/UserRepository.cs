@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AS.Data.Context;
 using AS.Domain.Entities;
 using AS.Domain.Interfaces.RepositoryInterfaces;
 using Microsoft.EntityFrameworkCore;
@@ -10,9 +11,9 @@ namespace AS.Data.Repostirories
 {
     public class UserRepository : IBaseRepository<User>
     {
-        private readonly DbContext _context;
+        private readonly DataContext _context;
 
-    public UserRepository(DbContext context)
+    public UserRepository(DataContext context)
     {
         _context = context;
     }

@@ -1,4 +1,5 @@
-﻿using AS.Domain.Entities;
+﻿using AS.Data.Context;
+using AS.Domain.Entities;
 using AS.Domain.Interfaces.RepositoryInterfaces;
 using Microsoft.EntityFrameworkCore;
 using System.Linq;
@@ -6,11 +7,11 @@ using System.Threading.Tasks;
 
 namespace AS.Data.Repositories
 {
-    public class LoanRepository : IBaseRepository<Loan>
+    public class LoanRepository : ILoanRepository
     {
-        private readonly DbContext _context;
+        private readonly DataContext _context;
 
-        public LoanRepository(DbContext context)
+        public LoanRepository(DataContext context)
         {
             _context = context;
         }

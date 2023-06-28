@@ -5,6 +5,8 @@ using System.Threading.Tasks;
 using AS.Data.Types;
 using AS.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
+using System.IO;
+
 
 namespace AS.Data.Context
 {

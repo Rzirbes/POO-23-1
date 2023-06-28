@@ -2,17 +2,18 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AS.Data.Context;
 using AS.Domain.Entities;
 using AS.Domain.Interfaces.RepositoryInterfaces;
 using Microsoft.EntityFrameworkCore;
 
 namespace AS.Data.Repostirories
 {
-    public class BookRepostiroy : IBaseRepository<Book>
+    public class BookRepository : IBaseRepository<Book>
     {
-        private readonly DbContext _context;
+        private readonly DataContext _context;
 
-        public BookRepostiroy(DbContext context)
+        public BookRepository(DataContext context)
         {
             _context = context;
         }
