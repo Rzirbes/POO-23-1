@@ -2081,11 +2081,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\rzirb\\Documents\\faculdade\\POO\\POO-23-1\\AS\\AS.csproj",
+      "projectUniqueName": "C:\\Users\\rzirb\\Documents\\faculdade\\POO\\POO-23-1\\AS\\AS.csproj",
       "projectName": "AS",
-      "projectPath": "c:\\Users\\rzirb\\Documents\\faculdade\\POO\\POO-23-1\\AS\\AS.csproj",
+      "projectPath": "C:\\Users\\rzirb\\Documents\\faculdade\\POO\\POO-23-1\\AS\\AS.csproj",
       "packagesPath": "C:\\Users\\rzirb\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\rzirb\\Documents\\faculdade\\POO\\POO-23-1\\AS\\obj\\",
+      "outputPath": "C:\\Users\\rzirb\\Documents\\faculdade\\POO\\POO-23-1\\AS\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\rzirb\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -2096,7 +2096,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\sdk\\7.0.302\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
+        "C:\\Program Files\\dotnet\\sdk\\7.0.304\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -2169,7 +2169,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
       }
     }
   }

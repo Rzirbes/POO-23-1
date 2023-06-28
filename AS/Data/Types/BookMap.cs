@@ -8,20 +8,24 @@ namespace AS.Data.Types
     {
         public void Configure(EntityTypeBuilder<Book> builder)
         {
-            builder.ToTable("Books");
+            builder.ToTable("books");
 
             builder.Property(b => b.Title)
+                .HasColumnName("title")
                 .IsRequired()
                 .HasMaxLength(200);
 
             builder.Property(b => b.PublicationYear)
+                .HasColumnName("publication_year")
                 .IsRequired();
 
             builder.Property(b => b.ISBN)
+                .HasColumnName("isbn")
                 .IsRequired()
                 .HasMaxLength(20);
 
             builder.Property(b => b.Price)
+                .HasColumnName("price")
                 .IsRequired();
 
             builder.HasOne(b => b.Publisher)
@@ -31,3 +35,4 @@ namespace AS.Data.Types
         }
     }
 }
+

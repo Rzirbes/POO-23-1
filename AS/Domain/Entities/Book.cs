@@ -10,7 +10,7 @@ namespace AS.Domain.Entities
     public string Title { get; set; }
     public ICollection<Author> Authors { get; set; }
     public int PublisherId { get; set; }
-    public Publisher Publisher { get; set; } // Propriedade de referência à editora do livro
+    public Publisher Publisher { get; set; }
     public int PublicationYear { get; set; }
     public string ISBN { get; set; }
     public decimal Price { get; set; }

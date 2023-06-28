@@ -11,6 +11,7 @@ namespace AS.Domain.Entities
         public ICollection<Book> BorrowedBooks { get; set; }
         public string Email { get; set; }
         public DateTime RegistrationDate { get; set; }
+        public virtual ICollection<Loan> Loans { get; set; }
 
     }
 }

@@ -8,23 +8,26 @@ namespace AS.Data.Types
     {
         public void Configure(EntityTypeBuilder<Author> builder)
         {
-            builder.ToTable("Authors");
+            builder.ToTable("authors");
 
             builder.Property(a => a.Name)
+                .HasColumnName("name") 
                 .IsRequired()
                 .HasMaxLength(100);
 
             builder.Property(a => a.Nationality)
+                .HasColumnName("nationality") 
                 .IsRequired()
                 .HasMaxLength(100);
 
             builder.Property(a => a.DateOfBirth)
+                .HasColumnName("date_of_birth") 
                 .IsRequired();
 
             // Configurar relacionamento com a tabela Books
             builder.HasMany(a => a.Books)
                 .WithMany(b => b.Authors)
-                .UsingEntity(j => j.ToTable("AuthorBook"));
+                .UsingEntity(j => j.ToTable("author_book"));
         }
     }
 }

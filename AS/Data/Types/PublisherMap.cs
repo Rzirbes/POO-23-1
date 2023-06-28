@@ -8,13 +8,15 @@ namespace AS.Data.Types
     {
         public void Configure(EntityTypeBuilder<Publisher> builder)
         {
-            builder.ToTable("Publishers");
+            builder.ToTable("publishers");
 
             builder.Property(p => p.Name)
+                .HasColumnName("name")
                 .IsRequired()
                 .HasMaxLength(100);
 
             builder.Property(p => p.Location)
+                .HasColumnName("location") 
                 .IsRequired()
                 .HasMaxLength(200);
         }

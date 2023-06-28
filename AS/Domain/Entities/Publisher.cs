@@ -9,6 +9,6 @@ namespace AS.Domain.Entities
     {
         public string Name { get; set; }
         public string Location { get; set; }
-        public ICollection<Book> Books { get; set; } // Propriedade de navegação para os livros da editora/publisher
+        public ICollection<Book> Books { get; set; }
     }
 }

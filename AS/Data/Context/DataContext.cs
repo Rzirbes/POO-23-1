@@ -10,14 +10,20 @@ namespace AS.Data.Context
 {
     public class DataContext : DbContext
     {
-        public DataContext(DbContextOptions<DataContext> options) : base(options)
+        public string DbPath { get; }
+        public DataContext()
         {
-
+            string path = Directory.GetCurrentDirectory();
+            DbPath = System.IO.Path.Join(path, "TestEFQuarta.db");
+            
         }
+        protected override void OnConfiguring(DbContextOptionsBuilder options)
+            => options.UseSqlite($"Data Source={DbPath}");
 
         public DbSet<Author> DbSetAuthor { get; set; }
         public DbSet<Book> DbSetBook { get; set; }
         public DbSet<User> DbSetUser { get; set; }
+        public DbSet<Loan> DbSetLoan { get; set; }
         public DbSet<Publisher> DbSetPublisher { get; set; }
         public DbSet<UserBook> DbSetUserBook { get; set; }
 

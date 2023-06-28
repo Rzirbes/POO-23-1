@@ -8,17 +8,20 @@ namespace AS.Data.Types
     {
         public void Configure(EntityTypeBuilder<User> builder)
         {
-            builder.ToTable("Users");
+            builder.ToTable("users");
 
             builder.Property(u => u.Name)
+                .HasColumnName("name")
                 .IsRequired()
                 .HasMaxLength(100);
 
             builder.Property(u => u.Email)
+                .HasColumnName("email")
                 .IsRequired()
                 .HasMaxLength(100);
 
             builder.Property(u => u.RegistrationDate)
+                .HasColumnName("registration_date")
                 .IsRequired();
 
             // Configurar relacionamento com a tabela Books
@@ -36,10 +39,11 @@ namespace AS.Data.Types
                         .HasForeignKey(ub => ub.UserId),
                     j =>
                     {
-                        j.ToTable("UserBook");
+                        j.ToTable("user_book");
                         j.HasKey(ub => new { ub.UserId, ub.BookId });
                     }
                 );
         }
     }
 }
+
