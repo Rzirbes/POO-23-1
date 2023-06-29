@@ -32,7 +32,12 @@ namespace AS.Data.Types
                 .WithMany(p => p.Books)
                 .HasForeignKey(b => b.PublisherId)
                 .IsRequired();
+
+            builder.HasMany(a => a.Authors)
+                .WithMany(b => b.Books)
+                .UsingEntity(j => j.ToTable("author_book"));
         }
     }
-}
+   }
+
 

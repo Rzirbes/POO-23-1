@@ -8,6 +8,7 @@ using AS.Service;
 using AS.Services;
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace AS.Controllers
 {
@@ -17,12 +18,14 @@ namespace AS.Controllers
     {
         private readonly BookService _bookService;
         private readonly AuthorService _authorService;
+        private readonly PublisherService _publisherService;
         private readonly IMapper _mapper;
 
-        public BooksController(BookService bookService, AuthorService authorService, IMapper mapper)
+        public BooksController(BookService bookService, AuthorService authorService, PublisherService publisherService, IMapper mapper)
         {
             _bookService = bookService;
             _authorService = authorService;
+            _publisherService = publisherService;
             _mapper = mapper;
         }
 
@@ -47,30 +50,50 @@ namespace AS.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> CreateBook([FromBody] BookViewModel bookViewModel)
+        public async Task<IActionResult> AddBook([FromBody] BookViewModel bookRequest)
         {
-            if (!ModelState.IsValid)
-                return BadRequest("Dados incorretos");
-
-            var book = _mapper.Map<Book>(bookViewModel);
-
-            if (book.Authors != null && book.Authors.Any())
+            try
             {
-                foreach (var author in book.Authors)
+                // Verifica se a publisher existe no banco de dados
+                Publisher publisher = await _publisherService.GetPublisherByIdAsync(bookRequest.PublisherId);
+                if (publisher == null)
                 {
-                    var existingAuthor = await _authorService.GetAuthorByIdAsync(author.Id);
-                    if (existingAuthor != null)
-                    {
-                        // Adicione o autor existente ao livro
-                        book.Authors.Add(existingAuthor);
-                    }
+                    return BadRequest("Publisher not found.");
                 }
-            }
 
-            await _bookService.AddAsync(book);
-            var createdBookDTO = _mapper.Map<BookDTO>(book);
-            return CreatedAtAction(nameof(GetBookById), new { id = book.Id }, createdBookDTO);
+                // Restante do código
+
+                // Cria um novo objeto Book a partir dos dados recebidos
+                Book book = new Book
+                {
+                    Title = bookRequest.Title,
+                    PublicationYear = bookRequest.PublicationYear,
+                    ISBN = bookRequest.ISBN,
+                    Price = bookRequest.Price,
+                    PublisherId = publisher.Id,
+                    Publisher = publisher // Associa a editora ao livro
+                };
+
+                // Restante do código
+
+                // Chama o serviço para adicionar o livro ao banco de dados
+                await _bookService.AddAsync(book);
+
+                // Restante do código
+
+                return Ok("Book added successfully.");
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"An error occurred: {ex.Message}");
+            }
         }
+
+
+
+
+
+
 
         [HttpPut("{id}")]
         public async Task<IActionResult> UpdateBook(int id, [FromBody] BookViewModel bookViewModel)
@@ -82,7 +105,6 @@ namespace AS.Controllers
             await _bookService.UpdateAsync(book);
             return NoContent();
         }
-
 
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteBook(int id)
